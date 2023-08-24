@@ -6,6 +6,8 @@ use wza\FineException\ExceptionArguments;
 
 abstract class FineException extends \Exception
 {
+    const DEF_MESSAGE = '';
+    const DEF_CODE    = 0;
 
     /**
      * @param ?ExceptionArguments $exceptionArguments
@@ -41,7 +43,7 @@ abstract class FineException extends \Exception
      */
     public function getPresetMessage(): string
     {
-        return '';
+        return self::DEF_MESSAGE;
     }
 
 
@@ -50,6 +52,6 @@ abstract class FineException extends \Exception
      */
     public function getPresetCode(): int
     {
-        return 0;
+        return self::DEF_CODE;
     }
 }
