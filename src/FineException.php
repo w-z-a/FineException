@@ -30,7 +30,7 @@ abstract class FineException extends \Exception
      *
      * @return static
      */
-    public static function create( ExceptionArguments $exceptionArguments = null ): FineException
+    public static function create( ExceptionArguments $exceptionArguments = null )
     {
         return new static( $exceptionArguments );
     }
