@@ -10,7 +10,7 @@ abstract class FineException extends \Exception
     /**
      * @param ?ExceptionArguments $exceptionArguments
      */
-    public function __construct( ?ExceptionArguments $exceptionArguments )
+    public function __construct( ?ExceptionArguments $exceptionArguments = null )
     {
         if ( is_null( $exceptionArguments ) ) {
             parent::__construct( $this->getPresetMessage(),
