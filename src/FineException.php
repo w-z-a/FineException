@@ -2,8 +2,6 @@
 
 namespace wza\FineException;
 
-use wza\FineException\ExceptionArguments;
-
 abstract class FineException extends \Exception
 {
     public const MESSAGE = '';
