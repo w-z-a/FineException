@@ -1,0 +1,19 @@
+{
+  "name": "w-z-a/fine-exception",
+  "type": "library",
+  "require": {
+    "php": ">=7.2"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "w-z-a\\FineException\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Artem Zolotov",
+      "email": "wzartem@gmail.com"
+    }
+  ]
+}
